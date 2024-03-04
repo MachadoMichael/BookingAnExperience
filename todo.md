@@ -3,10 +3,9 @@
 
 ### Structs
 
-[] owner { Id, Name, Email, Password }
-[] customer { Id, Name, Email }
-[] home { Id, Name, Localization, Bedroom, Guests, Price, CheckOutHour, CheckInHour, Description, Photos}
-[] appointment { Id, HomeId, CreateAt, CheckIn, CheckOut, CustomerId, PaymentId }
-[] payment {Id, Method, Status }
-[] paymentMethod { Id, Owner, CPF }
-[] paymentStatus { WAITING, PROCESSING, CONCLUDES } 
+[x] user { Id, Name, Email, Password, Phone, Address, Cpf, Type }
+[x] home { Id, Name, Localization, Bedroom, Guests, Price, CheckOutHour, CheckInHour, Description, Photos}
+[x] appointment { Id, HomeId, CreateAt, CheckIn, CheckOut, CustomerId, PaymentId }
+[x] payment {Id, Method, Status }
+[x] paymentMethod { Id, UserId, CPF }
+[x] paymentStatus { WAITING, PROCESSING, CONCLUDES } 
