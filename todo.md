@@ -1,7 +1,7 @@
 ## todo
 
 
-### CRUDS
+### Structs
 
 [] owner { Id, Name, Email, Password }
 [] customer { Id, Name, Email }
