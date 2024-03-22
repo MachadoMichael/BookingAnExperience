@@ -1,4 +1,4 @@
-namespace BookingAnExperience.Users
+namespace BookingAnExperience.Domains.Users
 {
     public class User
     {
@@ -11,7 +11,15 @@ namespace BookingAnExperience.Users
         public string Cpf { get; set; }
         public TypeOfUser Type { get; set; }
 
-        public User(string name, string email, string password, string phone, string address, string cpf, TypeOfUser type)
+        public User(
+            string name,
+            string email,
+            string password,
+            string phone,
+            string address,
+            string cpf,
+            TypeOfUser type
+        )
         {
             Id = new Guid();
             Name = name;

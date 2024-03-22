@@ -1,4 +1,4 @@
-namespace BookingAnExperience.Appointments
+namespace BookingAnExperience.Domains.Appointments
 {
     public class Appointment
     {
@@ -10,7 +10,14 @@ namespace BookingAnExperience.Appointments
         public Guid CustomerId { get; set; }
         public Guid PaymentId { get; set; }
 
-        public Appointment(Guid homeId, DateTime createAt, DateTime checkIn, DateTime checkOut, Guid customerId, Guid paymentId)
+        public Appointment(
+            Guid homeId,
+            DateTime createAt,
+            DateTime checkIn,
+            DateTime checkOut,
+            Guid customerId,
+            Guid paymentId
+        )
         {
             Id = new Guid();
             HomeId = homeId;
@@ -20,6 +27,5 @@ namespace BookingAnExperience.Appointments
             CustomerId = customerId;
             PaymentId = paymentId;
         }
-
     }
 }

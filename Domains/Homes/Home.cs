@@ -1,6 +1,6 @@
-using BookingAnExperience.Localizations;
+using BookingAnExperience.Domains.Localizations;
 
-namespace BookingAnExperience.Homes
+namespace BookingAnExperience.Domains.Homes
 {
     public class Home
     {
@@ -24,7 +24,7 @@ namespace BookingAnExperience.Homes
             string checkedOutHour,
             string checkInHour,
             string description
-            )
+        )
         {
             Id = new Guid();
             Name = name;

@@ -1,4 +1,4 @@
-namespace BookingAnExperience.Users
+namespace BookingAnExperience.Domains.Users
 {
     public enum TypeOfUser
     {

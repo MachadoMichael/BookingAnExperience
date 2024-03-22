@@ -1,4 +1,4 @@
-namespace BookingAnExperience.Payments
+namespace BookingAnExperience.Domains.Payments
 {
     public enum PaymentMethod
     {

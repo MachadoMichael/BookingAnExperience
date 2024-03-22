@@ -1,4 +1,4 @@
-namespace BookingAnExperience.Localizations
+namespace BookingAnExperience.Domains.Localizations
 {
     public class Localization
     {
@@ -9,7 +9,13 @@ namespace BookingAnExperience.Localizations
         public string Country { get; set; }
         public string District { get; set; }
 
-        public Localization(string street, int number, string details, string country, string district)
+        public Localization(
+            string street,
+            int number,
+            string details,
+            string country,
+            string district
+        )
         {
             Id = new Guid();
             Street = street;

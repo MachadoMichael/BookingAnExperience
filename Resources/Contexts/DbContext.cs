@@ -1,8 +1,8 @@
+using BookingAnExperience.Domains.Appointments;
+using BookingAnExperience.Domains.Homes;
+using BookingAnExperience.Domains.Localizations;
+using BookingAnExperience.Domains.Users;
 using Microsoft.EntityFrameworkCore;
-using BookingAnExperience.Users;
-using BookingAnExperience.Appointments;
-using BookingAnExperience.Localizations;
-using BookingAnExperience.Homes;
 
 namespace BookingAnExperience.Resources.Context
 {
@@ -15,8 +15,7 @@ namespace BookingAnExperience.Resources.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Appointment>()
-              .HasKey(a => a.Id);
+            modelBuilder.Entity<Appointment>().HasKey(a => a.Id);
         }
     }
 }
