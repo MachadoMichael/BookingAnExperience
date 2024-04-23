@@ -28,7 +28,7 @@ namespace BookingAnExperience.Domains.Appointments
 
         public async Task<Appointment> GetByIdAsync(Guid id)
         {
-            return await _context.Appointments.FindAsync(id);
+            return await _context.Appointments.FindAsync(id) ?? null;
         }
 
         public async Task AddAsync(Appointment newAppointment)
