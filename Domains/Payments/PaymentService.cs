@@ -1,4 +1,4 @@
-using BookingAnExperience.Resources.Contexts;
+using BookingAnExperience.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookingAnExperience.Domains.Payments
